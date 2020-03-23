@@ -42,7 +42,7 @@ public class IndexAPI {
 
         
 
-        IndexResponse response = client.prepareIndex("elasticdb", "product", "26")
+        IndexResponse response = client.prepareIndex("elasticdb", "product", "32")
                 .setSource(json)
                 .get();
 
