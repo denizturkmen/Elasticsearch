@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class IndexAPI {
+public class IndexAPIEx {
     public static void main(String[] args) {
 
         //ElasticSearch Cluster belirliyoruz
@@ -42,7 +42,7 @@ public class IndexAPI {
 
         
 
-        IndexResponse response = client.prepareIndex("elasticdb", "product", "32")
+        IndexResponse response = client.prepareIndex("elasticdb", "product", "33")
                 .setSource(json)
                 .get();
 
