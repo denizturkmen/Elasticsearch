@@ -32,7 +32,7 @@ public class GetAPIEx {
         System.out.println(getRequestBuilder.get());
         System.out.println("-----------------------------");
 
-        GetResponse response = client.prepareGet("elasticdb", "product", "33").get();
+        GetResponse response = client.prepareGet("elasticdb", "product", "9").get();
         Map<String,Object> source = response.getSource();
 
         if(source!=null) {
